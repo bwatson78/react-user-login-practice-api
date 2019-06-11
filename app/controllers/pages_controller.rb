@@ -1,4 +1,4 @@
-class Api::PagesController < ApplicationController
+class PagesController < ApplicationController
   before_action :set_page, only: %i(show)
   before_action :authenticate_user, only: %i(show), if: :page_access
 
